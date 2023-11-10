@@ -101,7 +101,7 @@
 // string Replace(string text, char oldValue, char newValue)
 // {
 //     string result = string.Empty;
-    
+
 //     int length = text.Length;
 //     for (int i = 0; i < length; i++)
 //     {
@@ -125,7 +125,7 @@
 // Упорядочивание данных в массивах
 
 
-int[] arr = {1, 5, 4, 3, 2, 6, 7, 1, 1};
+int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
 
 void PrintArray(int[] array)
 {
@@ -140,12 +140,12 @@ void PrintArray(int[] array)
 
 void SelectionSort(int[] array)
 {
-    for(int i = 0; i < array.Length ; i++)
+    for (int i = 0; i < array.Length; i++)
     {
         int minPosition = i;
         for (int j = i + 1; j < array.Length; j++)
         {
-            if(array[j] < array[minPosition]) minPosition = j;
+            if (array[j] < array[minPosition]) minPosition = j;
         }
         int temporary = array[i];
         array[i] = array[minPosition];
